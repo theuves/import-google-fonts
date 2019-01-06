@@ -1,6 +1,6 @@
 {
   "name": "import-google-fonts",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Import fonts from Google Fonts with styled-components.",
   "main": "./index.js",
   "keywords": [
