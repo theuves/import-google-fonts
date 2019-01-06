@@ -16,7 +16,7 @@ Try:
 See a simple example:
 
 ```javascript
-import { createInjectGlobal } from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 import importGoogleFonts from 'import-google-fonts'
 
 importGoogleFonts(importGoogleFonts, null, [
@@ -24,7 +24,7 @@ importGoogleFonts(importGoogleFonts, null, [
   'Indie Flower'
 ])
 
-createInjectGlobal`
+createGlobalStyle`
   body {
     font-family: Roboto, Arial, sans-serif;
   }
