@@ -1,0 +1,13 @@
+{
+  "name": "import-google-fonts",
+  "version": "0.0.0",
+  "description": "Import fonts from Google Fonts with styled-components.",
+  "main": "./index.js",
+  "keywords": [
+    "styled-components",
+    "google",
+    "fonts"
+  ],
+  "author": "Matheus Alves",
+  "license": "MIT"
+}
