@@ -47,7 +47,7 @@ ReactDOM.render(
 ### Syntax
 
 ```javascript
-importGoogleFonts(injector, protocol, fonts)
+importGoogleFonts(inject, protocol, fonts)
 ```
 
 When:
