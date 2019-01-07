@@ -16,19 +16,32 @@ Try:
 See a simple example:
 
 ```javascript
-import { createGlobalStyle } from 'styled-components'
+import React, { Fragment } from 'react'
+import ReactDOM from 'react-dom'
+import styled, { createGlobalStyle } from 'styled-components'
 import importGoogleFonts from 'import-google-fonts'
 
-importGoogleFonts(importGoogleFonts, null, [
-  'Roboto',
-  'Indie Flower'
+const GoogleFonts = importGoogleFonts(createGlobalStyle, null, [
+  'Pacifico'
 ])
 
-createGlobalStyle`
-  body {
-    font-family: Roboto, Arial, sans-serif;
-  }
+const MyText = styled.h1`
+  font-family: 'Pacifico', cursive;
 `
+
+const App = () => (
+  <Fragment>
+    <GoogleFonts />
+    <MyText>
+      Hello, World!
+    </MyText>
+  </Fragment>   
+)
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('root')
+)
 ```
 
 ### Syntax
@@ -39,11 +52,11 @@ importGoogleFonts(injector, protocol, fonts)
 
 When:
 
-* `inject` - A function that handles global styles.
+* `inject` - A function that handles global styles. Use [`createGlobalStyle`](https://www.styled-components.com/docs/api#createglobalstyle) in v4 and above or [`injectGlobal`](https://www.styled-components.com/docs/api#deprecated-injectglobal) in v3 and bellow.
 * `protocol` - Can be `'http'` or `'https'`. The default value is `'https'`.
 * `fonts` - An array with the fonts you want to import.
 
-> **NOTE**: `inject` must be [`createGlobalStyle`](https://www.styled-components.com/docs/api#createglobalstyle), but in *styled-components* v3 and bellow you must use [`injectGlobal`](https://www.styled-components.com/docs/api#deprecated-injectglobal).
+> **NOTE:** In *styled-components* v3 and below you don't need to create a component.
 
 ## License
 
