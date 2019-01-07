@@ -56,7 +56,7 @@ When:
 * `protocol` - Can be `'http'` or `'https'`. The default value is `'https'`.
 * `fonts` - An array with the fonts you want to import.
 
-> **NOTE:** In *styled-components* v3 and below you don't need to create a component.
+**NOTE:** In *styled-components* v3 and below you don't need to create a component.
 
 ## License
 
