@@ -52,7 +52,7 @@ importGoogleFonts(injector, protocol, fonts)
 
 When:
 
-* `inject` - A function that handles global styles. Use [`createGlobalStyle`](https://www.styled-components.com/docs/api#createglobalstyle) in v4 and above or [`injectGlobal`](https://www.styled-components.com/docs/api#deprecated-injectglobal) in v3 and bellow.
+* `inject` - The [`createGlobalStyle`](https://www.styled-components.com/docs/api#createglobalstyle) function in v4 and above or [`injectGlobal`](https://www.styled-components.com/docs/api#deprecated-injectglobal) in v3 and bellow.
 * `protocol` - Can be `'http'` or `'https'`. The default value is `'https'`.
 * `fonts` - An array with the fonts you want to import.
 
