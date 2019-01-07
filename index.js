@@ -4,5 +4,5 @@ module.exports = function importGoogleFonts(inject, protocol, fonts) {
 
   const url = `${protocol}://fonts.googleapis.com/css?family=${fonts}`
 
-  inject`@import url('${url}');`
+  return inject`@import url('${url}');`
 }
